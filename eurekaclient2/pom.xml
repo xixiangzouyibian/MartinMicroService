@@ -11,7 +11,7 @@
 	<groupId>com.martin</groupId>
 	<artifactId>eurekaclient2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eurekaclient</name>
+	<name>eurekaclient2</name>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>

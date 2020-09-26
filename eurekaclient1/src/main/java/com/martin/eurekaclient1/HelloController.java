@@ -1,4 +1,4 @@
-package com.martin.eurekaclient;
+package com.martin.eurekaclient1;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,6 +8,6 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello() {
-        return "Hello Spring Cloud 2";
+        return "Hello Spring Cloud 1";
     }
 }
