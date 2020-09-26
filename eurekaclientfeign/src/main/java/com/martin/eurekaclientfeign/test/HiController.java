@@ -18,8 +18,11 @@ public class HiController {
 //        return hiClient.hi();
 //    }
 
+    /**
+     * http://localhost:9001/actuator/hystrix.stream
+     */
     @RequestMapping("/hi")
-    @HystrixCommand(fallbackMethod = "fallBack",
+    @HystrixCommand(fallbackMethod = "fallback",
             commandProperties = {
                     @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "5"),
                     @HystrixProperty(name = "metrics.rollingStats.timeInMilliseconds", value = "5000"),
@@ -33,6 +36,6 @@ public class HiController {
 
     //fallback
     public String fallback() {
-        return "This ia hystrix fallback";
+        return "This is hystrix fallback";
     }
 }
