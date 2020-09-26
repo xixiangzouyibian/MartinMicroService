@@ -21,8 +21,8 @@ public class HiController {
     @RequestMapping("/hi")
     @HystrixCommand(fallbackMethod = "fallBack",
             commandProperties = {
-                    @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "2"),
-                    @HystrixProperty(name = "metrics.rollingStats.timeInMilliseconds", value = "500"),
+                    @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "5"),
+                    @HystrixProperty(name = "metrics.rollingStats.timeInMilliseconds", value = "5000"),
                     @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "30"),
                     @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "1000")
 
